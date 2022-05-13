@@ -9,13 +9,14 @@ from selenium.webdriver.common.keys import Keys
 import pandas as pd
 
 navegador_chrome = wb.Chrome()
-handles = navegador_chrome.window_handles 
-  
-for h in handles: 
-    navegador_chrome.switch_to.window(h) 
 
-    if navegador_chrome.title == 'Configurações':
-        navegador_chrome.close()
+# handles = navegador_chrome.window_handles 
+  
+# for h in handles: 
+#     navegador_chrome.switch_to.window(h) 
+
+#     if navegador_chrome.title == 'Configurações':
+#         navegador_chrome.close()
         
 
 arr_cotacoes = ['dolar', 'euro', 'ouro']
